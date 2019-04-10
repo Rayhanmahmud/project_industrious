@@ -14,3 +14,12 @@
 
 		
             
+		<?php
+		 // Fix #WpAdminBarmenu overlap
+		 if ( is_admin_bar_showing() ) echo 
+		'<style>
+  		 header#header {margin-top: 32px;}
+	   	 section#banner {margin-top: -22px;}
+		 nav#menu {margin-top: 32px;}
+		 </style>'; 
+		?>
